@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+
+.btn-giallo {
+    background-color: rgb(238, 226, 58);
+    color:black;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+}
+
+.btn-giallo:hover{
+	transform: scale(1.1);
+}
+.btn-giallo:hover {
+  background-color: #2980b9;  /* Cambia il colore di sfondo al passaggio del mouse */
+  box-shadow: 0px 4px 8px rgba(255, 255,255, 255);
+}
+
+.btn-nero {
+    background-color: rgb(101, 131, 161);
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-nero:hover{
+	transform: scale(1.1);
+}
+.btn-nero:hover {
+  background-color: rgb(238, 226, 58);  /* Cambia il colore di sfondo al passaggio del mouse */
+  box-shadow: 0px 4px 8px rgba(255, 255,255, 255);
+}
+
+.btn-chiaro{
+	 background-color: rgb(101, 131, 161);
+    border-radius: 20px;
+    border-left:3px;
+    border-left-color:#C3E1FF;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+    border: none;
+}
+.btn-chiaro:hover{
+	transform: scale(1.1);
+}
+.btn-chiaro:hover {
+  background-color: #2980b9;  /* Cambia il colore di sfondo al passaggio del mouse */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-chiaro:active {
+  background-color: #1c5980;  /* Cambia il colore di sfondo quando il bottone è cliccato */
+}
+
+.custom-bg {
+    background-color: rgb(26, 45, 63);
+}
+
+.testo-pargraph{
+	color: white;
+}
+
+.testo-titoli{
+	color: rgb(238, 226, 58);
+}
+
+.headline-background {
+  
+  	background-size: cover; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 160px;
+	background: linear-gradient(180deg, rgba(101, 131, 161, 0.4094) 0%, rgba(0, 0, 0, 0) 100%), url(./img-ref/kubrick-2001-fotoXK.jpg);
+
+}
+.headline-casual {
+  
+  	background-size: cover; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 160px;
+}
+
+
+.headline-background2 {
+    background: linear-gradient(180deg, rgba(101, 131, 161, 0.4094) 0%, rgba(0, 0, 0, 0) 100%), url(./img-ref/halloween.jpg);
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px;
+    height: 400px; 
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%; /* Scegli quanto deve estendersi la sfumatura */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1; /* Assicurati che l'overlay sia sopra l'immagine */
+  pointer-events: none; /* Questo fa sì che non interferisca con l'interazione con i contenuti sotto */
+}
+
+.carousel-caption {
+  z-index: 2; /* Assicurati che il testo sia sopra l'overlay */
+}
+
+.rounded-circle:hover {
+    transform: scale(1.1); 
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  
+.ghost, .bat {
+  position: fixed; /* Cambiato da absolute a fixed per occupare l'intera finestra */
+  bottom: 0;       /* Inizia dal fondo dello schermo */
+  width: 100px;    /* Dimensione degli elementi */
+  animation: floatUp 6s linear infinite; /* Animazione per farli salire */
+  z-index: 9999;   /* Assicurati che siano sopra il carosello */
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh); /* Parte dal fondo della finestra */
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh); /* Muove l'elemento fuori dallo schermo */
+    opacity: 0; /* Scompare lentamente */
+  }
+}
+
+
+
+
+
+

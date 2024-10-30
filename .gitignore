@@ -1,0 +1,15 @@
+/target/
+
+/.classpath
+
+/.project
+
+/.settings/
+
+/.mvn/
+
+/src/main/resources/META-INF/
+
+/bin/
+
+/src/main/java/it/generationitaly/cinema/controller/test.java
